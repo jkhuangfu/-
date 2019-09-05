@@ -1,4 +1,8 @@
 # 有一小盆友想对自己电脑中的格式不同但名称相同得音乐文件进行去重，于是它来了：
+# 使用方法：
+# 1、修改你要删除的文件格式
+# 2、把此文件放在需要的去重的文件同目录
+# 3、运行此文件即可
 
 import os
 
@@ -6,7 +10,7 @@ import os
 del_type = '.txt'
 
 # 需要处理的文件路径
-file_path = '/Users/huangfu/Desktop/CodeSpace/examples/text/'
+file_path = os.path.join(os.getcwd(),'')
 
 
 def get_all_file_name(source_path):
